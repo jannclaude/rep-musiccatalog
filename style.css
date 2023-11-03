@@ -24,6 +24,20 @@ body {
     overflow: hidden;
 }
 
+.blurbg-modal {
+	background:  rgba(0,0,0,0.35);
+    -webkit-mask-image: linear-gradient(black, black);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    height: 35vh;
+    width: 100vw;
+    left: 0rem;
+    top: -4rem;
+    position: absolute;
+    object-fit: fill;
+    overflow: hidden;
+}
+
 .blurred-overlay {
     position: absolute;
     top: 0px;
@@ -81,16 +95,32 @@ input[type=password] {
 	color: black !important;
 }
 
+.form-group .form-control::placeholder {
+	color: black !important;
+}
+
 @media (max-width: 992px) {
 	.signin-form {
 		display: none;
 	}
+
+	#SignInDialog .form-control::placeholder {
+		color: black;
+	}
+
+	.albums-display {
+		width: 100%;
+		background-color: #081613;
+		padding: 20px 50px !important;
+	}
+	
 }
 
 @media (min-width: 992px) {
 	#SignInDialog {
 		display: none;
 	}
+
 }
 
 .frame {
@@ -167,6 +197,9 @@ input[type=password] {
 
 .backgroundLogin {
 	background-color: #172623;
+	-webkit-mask-image: linear-gradient(black, black, transparent);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
 }
 
 #SignForm {
@@ -191,9 +224,45 @@ input[type=password] {
 	color: #fff !important;
 }
 
+.modal-dialog {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.modal-content {
+	background-color: #172623 !important;
+	color: #fff !important;
+	border: 1px solid hsl(170, 24%, 23%) !important;
+	border-radius: 1.5rem !important;
+}
+
+.modal-header {
+	border-bottom: 0px !important;
+}
+
+.modal-header .modal-title {
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.modal-body .form-group {
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+.modal-footer {
+	border-top: 0px !important;
+}
+.modal-header .close {
+	padding-top: 18px !important;
+}
 
 
-
+.close span {
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 0 8px;
+}
 
 .box{
 	width: 100%;
@@ -238,7 +307,7 @@ input[type=password] {
 .albums-display {
 	width: 100%;
 	background-color: #081613;
-	padding: 20px 0;
+	padding: 20px 200px;
 }
 
 .albums-display .popular-week {
@@ -276,7 +345,7 @@ input[type=password] {
 .p3 {
     font-family: "Rubik", sans-serif;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 13px;
     letter-spacing: 0;
     line-height: normal;
 	margin: 0 !important;

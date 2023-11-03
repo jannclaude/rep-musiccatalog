@@ -81,31 +81,26 @@
 				<p class="header1 mb-1">Make your own playlist and share it to your friends.</p>
 				<p class="header1 mb-1"><button class="text-button btn" type="button" data-bs-toggle="modal" data-bs-target="#SignUpDialog">Get Started</button></p>
 
-				<div class="modal fade" id="SignUpDialog" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalSignUpLabel" aria-hidden="true">
+				<div class="modal fade blurbg-modal" id="SignUpDialog" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalSignUpLabel" aria-hidden="true">
 					<div class="modal-dialog modal-dialog-centered" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="modalSignUpLabel">Sign In</h5>
+								<h5 class="modal-title" id="modalSignUpLabel">Sign Up</h5>
 								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
-								<!-- Add your sign-in form or content here -->
-								<!-- Example: -->
 								<form>
-									<div class="form-group">
-										<label for="username">Username</label>
-										<input type="text" class="form-control" id="username">
+									<div class="form-group ">
+										<input type="text" class="form-control rounded-pill w-100" id="username" placeholder="Email">
 									</div>
 									<div class="form-group">
-										<label for="password">Password</label>
-										<input type="password" class="form-control" id="password">
+										<input type="password" class="form-control rounded-pill w-100" id="password" placeholder="Password">
 									</div>
 								</form>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 								<button type="button" class="btn btn-primary">Sign In</button>
 							</div>
 						</div>
