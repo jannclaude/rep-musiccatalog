@@ -28,8 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
 const inputEmail = document.getElementById("exampleFormControlInput1");
 const inputPassword = document.getElementById("exampleFormControlInput2");
 
+
 let inputE = inputEmail.value;
 let inputP = inputPassword.value;
+
 
 window.addEventListener("resize", function() {
     inputEmail.value = inputE;
